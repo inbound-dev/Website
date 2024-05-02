@@ -1,12 +1,25 @@
-import { Content } from "next/font/google";
+import { Content, Finlandica } from "next/font/google";
 import './globals.css';
+
+function useDarkMode(){
+  return(
+    <div>
+    {window.matchMedia('(prefers-color-scheme: dark)')}
+    </div>
+  );
+}
+
 
 export default function Home() {
   return (
-    <main>
-      <div>
-        <h1 >Hello world!</h1>
+    <main className="Header">
+
+      <useDarkMode />
+      
+      <div className="Header">
+        <h1>Jordan's Website</h1>
       </div>
+
     </main>
   );
 }

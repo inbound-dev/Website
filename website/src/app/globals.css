@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,10 +21,44 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+/*mobile device styling*/
+@media (max-width: 600px) {
+  .NavigationList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body{
+    width: 70vh;
+  }
+  .NavItem{
+    padding-left: 4%;
+    flex-direction: row;
+  }
+  .Top p{
+    padding-left: 15%;
+  }
+  .Bottom{
+    padding-top: 50%;
+  }
+}
 
-/*main body styling*/
-main{
-  
+/*changes nav items depending on screen size*/
+@media (min-width: 601px) {
+  /*Nav styling*/
+.Navigation{
+  display: flex;
+  justify-content: right;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+.NavigationList{
+  display: flex;
+}
+.NavItem{
+  flex-direction: row;
+  padding-left: 5%;
+}
 }
 
 /*header styling*/
@@ -29,10 +69,19 @@ main{
   justify-content: center;
   font-size: 45px;
   font-weight: 150;
+  
 }
 
+.Top p{
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 150;
+}
+
+/*main body styling*/
 body {
-  width: 100%;
+  width: 95%;
   height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -43,8 +92,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.Top{
+  height: 100%;
+}
+.Bottom{
+  
 }

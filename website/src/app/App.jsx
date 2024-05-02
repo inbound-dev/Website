@@ -1,6 +1,6 @@
 import { Content, Finlandica } from "next/font/google"
 import './globals.css'
-import Home from './index'
+import Home from './pages/index'
 import Login from './pages/loginPage'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -10,7 +10,8 @@ export default function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="login" element={<Login/>} />
         </Routes>
       </BrowserRouter>
     </div>

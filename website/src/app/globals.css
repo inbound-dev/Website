@@ -24,6 +24,7 @@
 /*mobile device styling*/
 @media (max-width: 600px) {
   .NavigationList{
+    padding-top: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,9 +38,6 @@
   }
   .Top p{
     padding-left: 15%;
-  }
-  .Bottom{
-    padding-top: 50%;
   }
 }
 
@@ -58,6 +56,9 @@
 .NavItem{
   flex-direction: row;
   padding-left: 5%;
+}
+.NavItem a{
+  font-weight: 200;
 }
 }
 
@@ -94,7 +95,4 @@ body {
 
 .Top{
   height: 100%;
-}
-.Bottom{
-  
 }

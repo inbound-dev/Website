@@ -9,7 +9,7 @@ function useDarkMode(){
   );
 }
 
-export default function index(){
+function index(){
     return(
         <>
           <div className="Top">

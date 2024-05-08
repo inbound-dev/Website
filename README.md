@@ -1,7 +1,7 @@
 Jordan Hamilton's Personal Website!
 
 PATHS:
-"/"
+"/",
 "/Home"
 
 Must include's:

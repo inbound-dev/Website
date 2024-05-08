@@ -1,18 +1,18 @@
 Jordan Hamilton's Personal Website!
 
 PATHS:
-/
-/Home
+"/"
+"/Home"
 
 Must include's:
-Project Showcase
-nice pages and styling
+Project Showcase,
+nice pages and styling,
 a login route for access to other features such as:
-recipe book
-encryption api
-password manager
-notes app
-to-do list
+recipe book,
+encryption api,
+password manager,
+notes app,
+to-do list,
 etc...
 
 main project goals:

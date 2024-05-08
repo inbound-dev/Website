@@ -1,5 +1,4 @@
 import logo from './logo.svg';
-import './App.css';
 import {
   Link,
   Route,
@@ -10,6 +9,7 @@ import {
 
 //import all the pages
 import Home from "../src/Pages/Home"
+import PageNotFoundPage from "../src/Pages/404Page"
 
 //uses the react router to render all pages
 function App(){
@@ -17,6 +17,8 @@ function App(){
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="*" element={<PageNotFoundPage />} />
         </Routes>
       </Router>
     );

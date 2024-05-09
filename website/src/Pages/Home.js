@@ -1,6 +1,7 @@
-
+import style from "../Styles/GlobalStyle.css"
 
 //allows users to use dark mode (browser prefrence settings)
+//still needs css implementation
 function useDarkMode(){
     return(
       <div>

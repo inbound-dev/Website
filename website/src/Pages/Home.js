@@ -1,4 +1,5 @@
-import style from "../Styles/GlobalStyle.css"
+import globalStyle from "../Styles/GlobalStyle.css"
+import style from "../Styles/HomeStyle.css"
 
 //allows users to use dark mode (browser prefrence settings)
 //still needs css implementation

@@ -1,13 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    src: local('Montserrat'), url(../../public/Montserrat-VariableFont_wght.ttf) format('opentype');
+}
 
 :root{
-    color: aqua;
+    background-color: whitesmoke;
+    font-family: Montserrat, Arial, serif;
 }
+
+body{
+    width: 95vw;
+}
+
 
 @media (prefers-color-scheme: dark) {
  :root{
-    color: black;
+    background-color: darkslategray;
  }   
 }

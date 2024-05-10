@@ -1,4 +1,5 @@
-
+import globalStyle from "../Styles/GlobalStyle.css"
+import style from "../Styles/404Page.module.css"
 
 //allows users to use dark mode (browser prefrence settings)
 function useDarkMode(){
@@ -14,7 +15,7 @@ function PageNotFoundPage(){
     return(
         <div>
             <useDarkMode />
-            <h1>404 Page Not Found!</h1>
+            <h1 className={style.error}>404 Page Not Found!</h1>
         </div>
     );
  }

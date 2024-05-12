@@ -1,5 +1,5 @@
 import globalStyle from "../Styles/GlobalStyle.css"
-import style from "../Styles/HomeStyle.css"
+import style from "../Styles/HomeStyle.module.css"
 
 //allows users to use dark mode (browser prefrence settings)
 //still needs css implementation
@@ -14,10 +14,14 @@ function useDarkMode(){
 //main function containing home page
 function Home(){
     return(
-        <div>
-            <useDarkMode />
-            <h1>Hello World!</h1>
+        <>
+        <div className={style.header}>
+            <div className={style.headerText}>
+                <h1>Hello, I'm Jordan.</h1>
+                <h2>I am a full stack developer, photographer, and content creator.</h2>
+            </div>
         </div>
+        </>
     );
  }
 

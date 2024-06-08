@@ -1,5 +1,6 @@
-import globalStyle from "../Styles/GlobalStyle.css"
-import loginStyle from "../Styles/loginStyle.css"
+import globalStyle from "../Styles/GlobalStyle.css";
+import style from "../Styles/loginStyle.css";
+import { Link } from "react-router-dom";
 
 function useDarkMode(){
     return(
@@ -9,11 +10,14 @@ function useDarkMode(){
     );
   }
 
-//main function containing home page
+//main function containing Login page
 function Login(){
     return(
         <>
-        <h1>login</h1>
+        <Link to="/">Home</Link>
+        <body>
+            <h1>login</h1>
+        </body>
         </>
     );
  }

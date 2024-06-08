@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import globalStyle from "../Styles/GlobalStyle.css"
-import style from "../Styles/HomeStyle.module.css"
+import globalStyle from "../Styles/GlobalStyle.css";
+import style from "../Styles/HomeStyle.module.css";
 
 //allows users to use dark mode (browser prefrence settings)
 function useDarkMode(){

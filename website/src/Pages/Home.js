@@ -1,8 +1,8 @@
+import { Link } from "react-router-dom";
 import globalStyle from "../Styles/GlobalStyle.css"
 import style from "../Styles/HomeStyle.module.css"
 
 //allows users to use dark mode (browser prefrence settings)
-//still needs css implementation
 function useDarkMode(){
     return(
       <div>
@@ -15,6 +15,12 @@ function useDarkMode(){
 function Home(){
     return(
         <>
+        <nav className={style.Nav}>
+          <ul className={style.navList}>
+            <Link to="/Login" className={style.navItem}>Login</Link>
+          </ul>
+        </nav>
+
         <div className={style.header}>
             <div className={style.headerText}>
                 <h1>Hello, I'm Jordan.</h1>

@@ -1,7 +1,20 @@
-
-
-.headerText{
+.header{
     display: flex;
     justify-content: center;
-    vertical-align: middle;
+}
+
+.navItem{
+    display: inline;
+    justify-content: center;
+    padding: 2%;
+    text-decoration: none;
+}
+
+.Nav{
+    display: flex;
+    justify-content: start;
+}
+
+ul{
+    list-style-type: none;
 }
